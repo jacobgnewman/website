@@ -1,14 +1,97 @@
+:root{
+    --themeColor: rgba(240, 20, 79, 0.5);
+    --bgColor: #18181b;
+    --midGrey: #7f7f7f;
+    --lightOverlay: #313135;
+    --callouctcolor:dodgerblue;
+}
+
+::selection {
+    background: var(--themeColor);
+    color: #fff;
+}
+
+html {
+    background-color: var(--bgColor);
+    color: rgba(230, 230, 228, 1);
+    font-family: 'JetBrains Mono';
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1em 0;
+    font-size: 1.5em;
+}
+
+nav {
+    display: inline;
+    
+}
+
+li {
+    display: inline;
+    margin-right: 4px;
+}
+
+
+
 body {
     margin: 40px
     auto;
     max-width: 650px;
     line-height: 1.6;
     font-size: 18px;
-    color: #444;
     padding: 0
     10px
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Mono', 'Roboto Mono', monospace;
     line-height: 1.2
+}
+
+h1 {
+    font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-color: var(--themeColor);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+}
+h2 {
+    font-size: 1.4rem;
+}
+h3 {
+    font-size: 1.2rem;
+}
+h4 {
+    font-size: 1.1rem;
+}
+h5 {
+    font-size: 1rem;
+}
+h6 {
+    font-size: 1rem;
+}
+
+a {
+    color: var(--themeColor)
+    border-bottom: 3px solid var(--themeColor); 
+}
+
+blockquote {
+    background-color: rgb(32, 33,36)	;
+    font-size: 1.4em;
+    width:80%;
+    margin:50px auto;
+    font-family:Open Sans;
+    font-style:italic;
+    color: #555555;
+    padding:1.2em 30px 1.2em 75px;
+    border-left:8px solid var(--themeColor) ;
+    line-height:1.6;
+    position: relative;
+
 }

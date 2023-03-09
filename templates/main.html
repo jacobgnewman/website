@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css" />
-    {% block head %}
-    <title>Test:)</title>
-    {% endblock head %}
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Open+Sans&display=swap" rel=stylesheet>
+    <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=JetBrains+Mono">
+    <title>Jacob Newman</title>
 </head>
 <body>
+    <header>
+        <div class="main">
+            <a href="/">Blog title</a>
+        </div>
+        <nav>
+            <a href="/blog">blog</a>
+            <a href="/about">about</a>
+        </nav>
+    </header>
     <div id="content">
         {{content}}
     </div>
+    <footer>
+
+    </footer>
 </body>
 </html>
